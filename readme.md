@@ -1,5 +1,3 @@
-# Steps I used:
-
 First we will convert images to greyscale as RGB(x,y)= (R(x,y)+G(x,y)+B(x,y))/3
 then, follow these steps:
 
@@ -28,13 +26,20 @@ We go through all center cells and see which cells to re-color as Black/1 based 
 
 # Minutiae extraction using Rutovitz’s Crossing-Number:
 
-For each center point (P1), values are calculated by:
+> Left/Top trimming before it might help?!
+
+For each center point (P), values are calculated by:
 ![Defining CN](readme/cn.png)
 ![CN Values](readme/cn2.png)
 
+# Comparing:
+
+It's easy to create array of nodes where each has X,Y,Type & Types of neighboring cells but somehow I'm running out of heap space here even before comparing!
+.:. I'm picking the nears X,Y cell with similar type!
 
 
 # References:
 
-*
+* [ScienceDirect:"Preprocessing and postprocessing for skeleton-based fingerprint minutiae extraction",Feng Zhao,Xiaoou Tang](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.108.5844&rep=rep1&type=pdf)
+* ["A Brief Introduction to Skeleton-Based Fingerprint Minutiae Extraction",Feng Zhao](http://vc.sce.ntu.edu.sg/index_files/upload/USTC_BOOK/chapter6.pdf)
 * [Binarization and Thinning of Fingerprint Images by Pipelining, MVIP Tehran 2005]( http://www.academia.edu/1946178/Binarization_and_Thinning_of_Fingerprint_Images_by_Pipelining )
