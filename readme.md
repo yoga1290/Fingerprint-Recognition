@@ -16,12 +16,12 @@ We go through all center cells and see which cells to re-color as Black/1 based 
 * A(P1)= 1; center point must be Black/1 itself!
 
 * FOR EVEN iterations ((x+y)%2==0):
-**	P2*P4*P6=0
-**	P4*P6*P8=0 , where (*) indicates ANDing or multiplying!
+*	P2*P4*P6=0
+*	P4*P6*P8=0 , where (*) indicates ANDing or multiplying!
 
 * FOR OLD iterations ((x+y)%2==1):
-**	P2*P4*P8=0
-**	P2*P6*P8=0 , where (*) indicates ANDing or multiplying!
+*	P2*P4*P8=0
+*	P2*P6*P8=0 , where (*) indicates ANDing or multiplying!
 
 
 # Minutiae extraction using Rutovitz’s Crossing-Number:
